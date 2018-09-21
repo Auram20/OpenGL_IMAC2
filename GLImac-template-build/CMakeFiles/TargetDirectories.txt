@@ -1,0 +1,12 @@
+/home/6im2/manik/Bureau/OpenGL/GLImac-template-build/CMakeFiles/rebuild_cache.dir
+/home/6im2/manik/Bureau/OpenGL/GLImac-template-build/CMakeFiles/edit_cache.dir
+/home/6im2/manik/Bureau/OpenGL/GLImac-template-build/glimac/CMakeFiles/rebuild_cache.dir
+/home/6im2/manik/Bureau/OpenGL/GLImac-template-build/glimac/CMakeFiles/edit_cache.dir
+/home/6im2/manik/Bureau/OpenGL/GLImac-template-build/glimac/CMakeFiles/glimac.dir
+/home/6im2/manik/Bureau/OpenGL/GLImac-template-build/TP1/CMakeFiles/rebuild_cache.dir
+/home/6im2/manik/Bureau/OpenGL/GLImac-template-build/TP1/CMakeFiles/TP1_SDLtemplate_exo2.dir
+/home/6im2/manik/Bureau/OpenGL/GLImac-template-build/TP1/CMakeFiles/edit_cache.dir
+/home/6im2/manik/Bureau/OpenGL/GLImac-template-build/TP1/CMakeFiles/TP1_SDLtemplate.dir
+/home/6im2/manik/Bureau/OpenGL/GLImac-template-build/TP_template/CMakeFiles/rebuild_cache.dir
+/home/6im2/manik/Bureau/OpenGL/GLImac-template-build/TP_template/CMakeFiles/edit_cache.dir
+/home/6im2/manik/Bureau/OpenGL/GLImac-template-build/TP_template/CMakeFiles/TP_template_SDLtemplate.dir
