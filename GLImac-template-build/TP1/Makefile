@@ -111,6 +111,51 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+TP1/CMakeFiles/TP1_SDLtemplate.dir/rule:
+	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f CMakeFiles/Makefile2 TP1/CMakeFiles/TP1_SDLtemplate.dir/rule
+.PHONY : TP1/CMakeFiles/TP1_SDLtemplate.dir/rule
+
+# Convenience name for target.
+TP1_SDLtemplate: TP1/CMakeFiles/TP1_SDLtemplate.dir/rule
+
+.PHONY : TP1_SDLtemplate
+
+# fast build rule for target.
+TP1_SDLtemplate/fast:
+	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f TP1/CMakeFiles/TP1_SDLtemplate.dir/build.make TP1/CMakeFiles/TP1_SDLtemplate.dir/build
+.PHONY : TP1_SDLtemplate/fast
+
+# Convenience name for target.
+TP1/CMakeFiles/TP1_exo3_structure_vertex.dir/rule:
+	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f CMakeFiles/Makefile2 TP1/CMakeFiles/TP1_exo3_structure_vertex.dir/rule
+.PHONY : TP1/CMakeFiles/TP1_exo3_structure_vertex.dir/rule
+
+# Convenience name for target.
+TP1_exo3_structure_vertex: TP1/CMakeFiles/TP1_exo3_structure_vertex.dir/rule
+
+.PHONY : TP1_exo3_structure_vertex
+
+# fast build rule for target.
+TP1_exo3_structure_vertex/fast:
+	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f TP1/CMakeFiles/TP1_exo3_structure_vertex.dir/build.make TP1/CMakeFiles/TP1_exo3_structure_vertex.dir/build
+.PHONY : TP1_exo3_structure_vertex/fast
+
+# Convenience name for target.
+TP1/CMakeFiles/TP1_exo4_quad.dir/rule:
+	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f CMakeFiles/Makefile2 TP1/CMakeFiles/TP1_exo4_quad.dir/rule
+.PHONY : TP1/CMakeFiles/TP1_exo4_quad.dir/rule
+
+# Convenience name for target.
+TP1_exo4_quad: TP1/CMakeFiles/TP1_exo4_quad.dir/rule
+
+.PHONY : TP1_exo4_quad
+
+# fast build rule for target.
+TP1_exo4_quad/fast:
+	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f TP1/CMakeFiles/TP1_exo4_quad.dir/build.make TP1/CMakeFiles/TP1_exo4_quad.dir/build
+.PHONY : TP1_exo4_quad/fast
+
+# Convenience name for target.
 TP1/CMakeFiles/TP1_SDLtemplate_exo2.dir/rule:
 	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f CMakeFiles/Makefile2 TP1/CMakeFiles/TP1_SDLtemplate_exo2.dir/rule
 .PHONY : TP1/CMakeFiles/TP1_SDLtemplate_exo2.dir/rule
@@ -126,19 +171,19 @@ TP1_SDLtemplate_exo2/fast:
 .PHONY : TP1_SDLtemplate_exo2/fast
 
 # Convenience name for target.
-TP1/CMakeFiles/TP1_SDLtemplate.dir/rule:
-	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f CMakeFiles/Makefile2 TP1/CMakeFiles/TP1_SDLtemplate.dir/rule
-.PHONY : TP1/CMakeFiles/TP1_SDLtemplate.dir/rule
+TP1/CMakeFiles/TP1_exo2_triangle_couleur.dir/rule:
+	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f CMakeFiles/Makefile2 TP1/CMakeFiles/TP1_exo2_triangle_couleur.dir/rule
+.PHONY : TP1/CMakeFiles/TP1_exo2_triangle_couleur.dir/rule
 
 # Convenience name for target.
-TP1_SDLtemplate: TP1/CMakeFiles/TP1_SDLtemplate.dir/rule
+TP1_exo2_triangle_couleur: TP1/CMakeFiles/TP1_exo2_triangle_couleur.dir/rule
 
-.PHONY : TP1_SDLtemplate
+.PHONY : TP1_exo2_triangle_couleur
 
 # fast build rule for target.
-TP1_SDLtemplate/fast:
-	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f TP1/CMakeFiles/TP1_SDLtemplate.dir/build.make TP1/CMakeFiles/TP1_SDLtemplate.dir/build
-.PHONY : TP1_SDLtemplate/fast
+TP1_exo2_triangle_couleur/fast:
+	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f TP1/CMakeFiles/TP1_exo2_triangle_couleur.dir/build.make TP1/CMakeFiles/TP1_exo2_triangle_couleur.dir/build
+.PHONY : TP1_exo2_triangle_couleur/fast
 
 SDLtemplate.o: SDLtemplate.cpp.o
 
@@ -194,6 +239,87 @@ SDLtemplate_exo2.cpp.s:
 	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f TP1/CMakeFiles/TP1_SDLtemplate_exo2.dir/build.make TP1/CMakeFiles/TP1_SDLtemplate_exo2.dir/SDLtemplate_exo2.cpp.s
 .PHONY : SDLtemplate_exo2.cpp.s
 
+exo2_triangle_couleur.o: exo2_triangle_couleur.cpp.o
+
+.PHONY : exo2_triangle_couleur.o
+
+# target to build an object file
+exo2_triangle_couleur.cpp.o:
+	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f TP1/CMakeFiles/TP1_exo2_triangle_couleur.dir/build.make TP1/CMakeFiles/TP1_exo2_triangle_couleur.dir/exo2_triangle_couleur.cpp.o
+.PHONY : exo2_triangle_couleur.cpp.o
+
+exo2_triangle_couleur.i: exo2_triangle_couleur.cpp.i
+
+.PHONY : exo2_triangle_couleur.i
+
+# target to preprocess a source file
+exo2_triangle_couleur.cpp.i:
+	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f TP1/CMakeFiles/TP1_exo2_triangle_couleur.dir/build.make TP1/CMakeFiles/TP1_exo2_triangle_couleur.dir/exo2_triangle_couleur.cpp.i
+.PHONY : exo2_triangle_couleur.cpp.i
+
+exo2_triangle_couleur.s: exo2_triangle_couleur.cpp.s
+
+.PHONY : exo2_triangle_couleur.s
+
+# target to generate assembly for a file
+exo2_triangle_couleur.cpp.s:
+	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f TP1/CMakeFiles/TP1_exo2_triangle_couleur.dir/build.make TP1/CMakeFiles/TP1_exo2_triangle_couleur.dir/exo2_triangle_couleur.cpp.s
+.PHONY : exo2_triangle_couleur.cpp.s
+
+exo3_structure_vertex.cpp_.o: exo3_structure_vertex.cpp_.cpp.o
+
+.PHONY : exo3_structure_vertex.cpp_.o
+
+# target to build an object file
+exo3_structure_vertex.cpp_.cpp.o:
+	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f TP1/CMakeFiles/TP1_exo3_structure_vertex.dir/build.make TP1/CMakeFiles/TP1_exo3_structure_vertex.dir/exo3_structure_vertex.cpp_.cpp.o
+.PHONY : exo3_structure_vertex.cpp_.cpp.o
+
+exo3_structure_vertex.cpp_.i: exo3_structure_vertex.cpp_.cpp.i
+
+.PHONY : exo3_structure_vertex.cpp_.i
+
+# target to preprocess a source file
+exo3_structure_vertex.cpp_.cpp.i:
+	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f TP1/CMakeFiles/TP1_exo3_structure_vertex.dir/build.make TP1/CMakeFiles/TP1_exo3_structure_vertex.dir/exo3_structure_vertex.cpp_.cpp.i
+.PHONY : exo3_structure_vertex.cpp_.cpp.i
+
+exo3_structure_vertex.cpp_.s: exo3_structure_vertex.cpp_.cpp.s
+
+.PHONY : exo3_structure_vertex.cpp_.s
+
+# target to generate assembly for a file
+exo3_structure_vertex.cpp_.cpp.s:
+	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f TP1/CMakeFiles/TP1_exo3_structure_vertex.dir/build.make TP1/CMakeFiles/TP1_exo3_structure_vertex.dir/exo3_structure_vertex.cpp_.cpp.s
+.PHONY : exo3_structure_vertex.cpp_.cpp.s
+
+exo4_quad.o: exo4_quad.cpp.o
+
+.PHONY : exo4_quad.o
+
+# target to build an object file
+exo4_quad.cpp.o:
+	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f TP1/CMakeFiles/TP1_exo4_quad.dir/build.make TP1/CMakeFiles/TP1_exo4_quad.dir/exo4_quad.cpp.o
+.PHONY : exo4_quad.cpp.o
+
+exo4_quad.i: exo4_quad.cpp.i
+
+.PHONY : exo4_quad.i
+
+# target to preprocess a source file
+exo4_quad.cpp.i:
+	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f TP1/CMakeFiles/TP1_exo4_quad.dir/build.make TP1/CMakeFiles/TP1_exo4_quad.dir/exo4_quad.cpp.i
+.PHONY : exo4_quad.cpp.i
+
+exo4_quad.s: exo4_quad.cpp.s
+
+.PHONY : exo4_quad.s
+
+# target to generate assembly for a file
+exo4_quad.cpp.s:
+	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f TP1/CMakeFiles/TP1_exo4_quad.dir/build.make TP1/CMakeFiles/TP1_exo4_quad.dir/exo4_quad.cpp.s
+.PHONY : exo4_quad.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -201,15 +327,27 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... TP1_SDLtemplate_exo2"
-	@echo "... edit_cache"
 	@echo "... TP1_SDLtemplate"
+	@echo "... edit_cache"
+	@echo "... TP1_exo3_structure_vertex"
+	@echo "... TP1_exo4_quad"
+	@echo "... TP1_SDLtemplate_exo2"
+	@echo "... TP1_exo2_triangle_couleur"
 	@echo "... SDLtemplate.o"
 	@echo "... SDLtemplate.i"
 	@echo "... SDLtemplate.s"
 	@echo "... SDLtemplate_exo2.o"
 	@echo "... SDLtemplate_exo2.i"
 	@echo "... SDLtemplate_exo2.s"
+	@echo "... exo2_triangle_couleur.o"
+	@echo "... exo2_triangle_couleur.i"
+	@echo "... exo2_triangle_couleur.s"
+	@echo "... exo3_structure_vertex.cpp_.o"
+	@echo "... exo3_structure_vertex.cpp_.i"
+	@echo "... exo3_structure_vertex.cpp_.s"
+	@echo "... exo4_quad.o"
+	@echo "... exo4_quad.i"
+	@echo "... exo4_quad.s"
 .PHONY : help
 
 

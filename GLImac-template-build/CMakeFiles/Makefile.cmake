@@ -58,7 +58,10 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "glimac/CMakeFiles/glimac.dir/DependInfo.cmake"
-  "TP1/CMakeFiles/TP1_SDLtemplate_exo2.dir/DependInfo.cmake"
   "TP1/CMakeFiles/TP1_SDLtemplate.dir/DependInfo.cmake"
+  "TP1/CMakeFiles/TP1_exo3_structure_vertex.dir/DependInfo.cmake"
+  "TP1/CMakeFiles/TP1_exo4_quad.dir/DependInfo.cmake"
+  "TP1/CMakeFiles/TP1_SDLtemplate_exo2.dir/DependInfo.cmake"
+  "TP1/CMakeFiles/TP1_exo2_triangle_couleur.dir/DependInfo.cmake"
   "TP_template/CMakeFiles/TP_template_SDLtemplate.dir/DependInfo.cmake"
   )
