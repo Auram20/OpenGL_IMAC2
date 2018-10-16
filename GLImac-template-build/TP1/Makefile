@@ -111,6 +111,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+TP1/CMakeFiles/TP1_exo4_quad_V2.dir/rule:
+	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f CMakeFiles/Makefile2 TP1/CMakeFiles/TP1_exo4_quad_V2.dir/rule
+.PHONY : TP1/CMakeFiles/TP1_exo4_quad_V2.dir/rule
+
+# Convenience name for target.
+TP1_exo4_quad_V2: TP1/CMakeFiles/TP1_exo4_quad_V2.dir/rule
+
+.PHONY : TP1_exo4_quad_V2
+
+# fast build rule for target.
+TP1_exo4_quad_V2/fast:
+	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f TP1/CMakeFiles/TP1_exo4_quad_V2.dir/build.make TP1/CMakeFiles/TP1_exo4_quad_V2.dir/build
+.PHONY : TP1_exo4_quad_V2/fast
+
+# Convenience name for target.
 TP1/CMakeFiles/TP1_SDLtemplate.dir/rule:
 	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f CMakeFiles/Makefile2 TP1/CMakeFiles/TP1_SDLtemplate.dir/rule
 .PHONY : TP1/CMakeFiles/TP1_SDLtemplate.dir/rule
@@ -320,6 +335,33 @@ exo4_quad.cpp.s:
 	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f TP1/CMakeFiles/TP1_exo4_quad.dir/build.make TP1/CMakeFiles/TP1_exo4_quad.dir/exo4_quad.cpp.s
 .PHONY : exo4_quad.cpp.s
 
+exo4_quad_V2.o: exo4_quad_V2.cpp.o
+
+.PHONY : exo4_quad_V2.o
+
+# target to build an object file
+exo4_quad_V2.cpp.o:
+	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f TP1/CMakeFiles/TP1_exo4_quad_V2.dir/build.make TP1/CMakeFiles/TP1_exo4_quad_V2.dir/exo4_quad_V2.cpp.o
+.PHONY : exo4_quad_V2.cpp.o
+
+exo4_quad_V2.i: exo4_quad_V2.cpp.i
+
+.PHONY : exo4_quad_V2.i
+
+# target to preprocess a source file
+exo4_quad_V2.cpp.i:
+	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f TP1/CMakeFiles/TP1_exo4_quad_V2.dir/build.make TP1/CMakeFiles/TP1_exo4_quad_V2.dir/exo4_quad_V2.cpp.i
+.PHONY : exo4_quad_V2.cpp.i
+
+exo4_quad_V2.s: exo4_quad_V2.cpp.s
+
+.PHONY : exo4_quad_V2.s
+
+# target to generate assembly for a file
+exo4_quad_V2.cpp.s:
+	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f TP1/CMakeFiles/TP1_exo4_quad_V2.dir/build.make TP1/CMakeFiles/TP1_exo4_quad_V2.dir/exo4_quad_V2.cpp.s
+.PHONY : exo4_quad_V2.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -327,6 +369,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... TP1_exo4_quad_V2"
 	@echo "... TP1_SDLtemplate"
 	@echo "... edit_cache"
 	@echo "... TP1_exo3_structure_vertex"
@@ -348,6 +391,9 @@ help:
 	@echo "... exo4_quad.o"
 	@echo "... exo4_quad.i"
 	@echo "... exo4_quad.s"
+	@echo "... exo4_quad_V2.o"
+	@echo "... exo4_quad_V2.i"
+	@echo "... exo4_quad_V2.s"
 .PHONY : help
 
 

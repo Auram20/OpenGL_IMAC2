@@ -36,6 +36,8 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/6im2/manik/Bureau/OpenGL/GLImac-template-build/glimac/cmake_install.cmake")
   include("/home/6im2/manik/Bureau/OpenGL/GLImac-template-build/TP1/cmake_install.cmake")
+  include("/home/6im2/manik/Bureau/OpenGL/GLImac-template-build/TP2/cmake_install.cmake")
+  include("/home/6im2/manik/Bureau/OpenGL/GLImac-template-build/TP2_V2/cmake_install.cmake")
   include("/home/6im2/manik/Bureau/OpenGL/GLImac-template-build/TP_template/cmake_install.cmake")
 
 endif()

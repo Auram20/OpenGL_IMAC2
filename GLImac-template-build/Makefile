@@ -124,6 +124,19 @@ glimac/fast:
 .PHONY : glimac/fast
 
 #=============================================================================
+# Target rules for targets named TP1_exo4_quad_V2
+
+# Build rule for target.
+TP1_exo4_quad_V2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 TP1_exo4_quad_V2
+.PHONY : TP1_exo4_quad_V2
+
+# fast build rule for target.
+TP1_exo4_quad_V2/fast:
+	$(MAKE) -f TP1/CMakeFiles/TP1_exo4_quad_V2.dir/build.make TP1/CMakeFiles/TP1_exo4_quad_V2.dir/build
+.PHONY : TP1_exo4_quad_V2/fast
+
+#=============================================================================
 # Target rules for targets named TP1_SDLtemplate
 
 # Build rule for target.
@@ -189,6 +202,32 @@ TP1_exo2_triangle_couleur/fast:
 .PHONY : TP1_exo2_triangle_couleur/fast
 
 #=============================================================================
+# Target rules for targets named TP2_SDLtemplate
+
+# Build rule for target.
+TP2_SDLtemplate: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 TP2_SDLtemplate
+.PHONY : TP2_SDLtemplate
+
+# fast build rule for target.
+TP2_SDLtemplate/fast:
+	$(MAKE) -f TP2/CMakeFiles/TP2_SDLtemplate.dir/build.make TP2/CMakeFiles/TP2_SDLtemplate.dir/build
+.PHONY : TP2_SDLtemplate/fast
+
+#=============================================================================
+# Target rules for targets named TP2_V2_SDLtemplate
+
+# Build rule for target.
+TP2_V2_SDLtemplate: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 TP2_V2_SDLtemplate
+.PHONY : TP2_V2_SDLtemplate
+
+# fast build rule for target.
+TP2_V2_SDLtemplate/fast:
+	$(MAKE) -f TP2_V2/CMakeFiles/TP2_V2_SDLtemplate.dir/build.make TP2_V2/CMakeFiles/TP2_V2_SDLtemplate.dir/build
+.PHONY : TP2_V2_SDLtemplate/fast
+
+#=============================================================================
 # Target rules for targets named TP_template_SDLtemplate
 
 # Build rule for target.
@@ -210,11 +249,14 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... glimac"
+	@echo "... TP1_exo4_quad_V2"
 	@echo "... TP1_SDLtemplate"
 	@echo "... TP1_exo3_structure_vertex"
 	@echo "... TP1_exo4_quad"
 	@echo "... TP1_SDLtemplate_exo2"
 	@echo "... TP1_exo2_triangle_couleur"
+	@echo "... TP2_SDLtemplate"
+	@echo "... TP2_V2_SDLtemplate"
 	@echo "... TP_template_SDLtemplate"
 .PHONY : help
 
