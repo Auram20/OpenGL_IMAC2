@@ -4,6 +4,7 @@ layout(location = 0) in vec2 aVertexPosition;
 layout(location = 1) in vec3 aVertexColor;
 
 out vec3 vFragColor;
+out vec2 vFragPosition;
 
 
 mat3 translate(float tx, float ty)
@@ -29,6 +30,7 @@ mat3 rotate(float a)
 
 void main() {
   vFragColor = aVertexColor;
+  vFragPosition=aVertexPosition;
   
 // Exemples de Transofmations à appliquer automatiquement sur le aVertexPosition
   vec2 aTranslatePosition = vec2(aVertexPosition.x+0.5,aVertexPosition.y+0.5);
@@ -38,6 +40,7 @@ void main() {
 
 
 // Transformation matricielle
-  gl_Position = vec4((rotate(45) * vec3(aVertexPosition, 1)).xy, 0, 1);
+ gl_Position = vec4(( vec3(aVertexPosition, 1)).xy, 0, 1);
+
 
 };

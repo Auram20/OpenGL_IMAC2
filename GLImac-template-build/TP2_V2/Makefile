@@ -111,6 +111,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+TP2_V2/CMakeFiles/TP2_V2_SDLtemplate_suite.dir/rule:
+	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f CMakeFiles/Makefile2 TP2_V2/CMakeFiles/TP2_V2_SDLtemplate_suite.dir/rule
+.PHONY : TP2_V2/CMakeFiles/TP2_V2_SDLtemplate_suite.dir/rule
+
+# Convenience name for target.
+TP2_V2_SDLtemplate_suite: TP2_V2/CMakeFiles/TP2_V2_SDLtemplate_suite.dir/rule
+
+.PHONY : TP2_V2_SDLtemplate_suite
+
+# fast build rule for target.
+TP2_V2_SDLtemplate_suite/fast:
+	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f TP2_V2/CMakeFiles/TP2_V2_SDLtemplate_suite.dir/build.make TP2_V2/CMakeFiles/TP2_V2_SDLtemplate_suite.dir/build
+.PHONY : TP2_V2_SDLtemplate_suite/fast
+
+# Convenience name for target.
 TP2_V2/CMakeFiles/TP2_V2_SDLtemplate.dir/rule:
 	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f CMakeFiles/Makefile2 TP2_V2/CMakeFiles/TP2_V2_SDLtemplate.dir/rule
 .PHONY : TP2_V2/CMakeFiles/TP2_V2_SDLtemplate.dir/rule
@@ -152,6 +167,33 @@ SDLtemplate.cpp.s:
 	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f TP2_V2/CMakeFiles/TP2_V2_SDLtemplate.dir/build.make TP2_V2/CMakeFiles/TP2_V2_SDLtemplate.dir/SDLtemplate.cpp.s
 .PHONY : SDLtemplate.cpp.s
 
+SDLtemplate_suite.o: SDLtemplate_suite.cpp.o
+
+.PHONY : SDLtemplate_suite.o
+
+# target to build an object file
+SDLtemplate_suite.cpp.o:
+	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f TP2_V2/CMakeFiles/TP2_V2_SDLtemplate_suite.dir/build.make TP2_V2/CMakeFiles/TP2_V2_SDLtemplate_suite.dir/SDLtemplate_suite.cpp.o
+.PHONY : SDLtemplate_suite.cpp.o
+
+SDLtemplate_suite.i: SDLtemplate_suite.cpp.i
+
+.PHONY : SDLtemplate_suite.i
+
+# target to preprocess a source file
+SDLtemplate_suite.cpp.i:
+	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f TP2_V2/CMakeFiles/TP2_V2_SDLtemplate_suite.dir/build.make TP2_V2/CMakeFiles/TP2_V2_SDLtemplate_suite.dir/SDLtemplate_suite.cpp.i
+.PHONY : SDLtemplate_suite.cpp.i
+
+SDLtemplate_suite.s: SDLtemplate_suite.cpp.s
+
+.PHONY : SDLtemplate_suite.s
+
+# target to generate assembly for a file
+SDLtemplate_suite.cpp.s:
+	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f TP2_V2/CMakeFiles/TP2_V2_SDLtemplate_suite.dir/build.make TP2_V2/CMakeFiles/TP2_V2_SDLtemplate_suite.dir/SDLtemplate_suite.cpp.s
+.PHONY : SDLtemplate_suite.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -159,11 +201,15 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... TP2_V2_SDLtemplate_suite"
 	@echo "... edit_cache"
 	@echo "... TP2_V2_SDLtemplate"
 	@echo "... SDLtemplate.o"
 	@echo "... SDLtemplate.i"
 	@echo "... SDLtemplate.s"
+	@echo "... SDLtemplate_suite.o"
+	@echo "... SDLtemplate_suite.i"
+	@echo "... SDLtemplate_suite.s"
 .PHONY : help
 
 

@@ -69,6 +69,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "TP1/CMakeFiles/TP1_SDLtemplate_exo2.dir/DependInfo.cmake"
   "TP1/CMakeFiles/TP1_exo2_triangle_couleur.dir/DependInfo.cmake"
   "TP2/CMakeFiles/TP2_SDLtemplate.dir/DependInfo.cmake"
+  "TP2_V2/CMakeFiles/TP2_V2_SDLtemplate_suite.dir/DependInfo.cmake"
   "TP2_V2/CMakeFiles/TP2_V2_SDLtemplate.dir/DependInfo.cmake"
   "TP_template/CMakeFiles/TP_template_SDLtemplate.dir/DependInfo.cmake"
   )

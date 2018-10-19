@@ -215,6 +215,19 @@ TP2_SDLtemplate/fast:
 .PHONY : TP2_SDLtemplate/fast
 
 #=============================================================================
+# Target rules for targets named TP2_V2_SDLtemplate_suite
+
+# Build rule for target.
+TP2_V2_SDLtemplate_suite: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 TP2_V2_SDLtemplate_suite
+.PHONY : TP2_V2_SDLtemplate_suite
+
+# fast build rule for target.
+TP2_V2_SDLtemplate_suite/fast:
+	$(MAKE) -f TP2_V2/CMakeFiles/TP2_V2_SDLtemplate_suite.dir/build.make TP2_V2/CMakeFiles/TP2_V2_SDLtemplate_suite.dir/build
+.PHONY : TP2_V2_SDLtemplate_suite/fast
+
+#=============================================================================
 # Target rules for targets named TP2_V2_SDLtemplate
 
 # Build rule for target.
@@ -256,6 +269,7 @@ help:
 	@echo "... TP1_SDLtemplate_exo2"
 	@echo "... TP1_exo2_triangle_couleur"
 	@echo "... TP2_SDLtemplate"
+	@echo "... TP2_V2_SDLtemplate_suite"
 	@echo "... TP2_V2_SDLtemplate"
 	@echo "... TP_template_SDLtemplate"
 .PHONY : help
