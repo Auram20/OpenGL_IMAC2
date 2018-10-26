@@ -1,25 +1,14 @@
-#version 330
+#version 330 core
 
 layout(location = 3) in vec2 aVertexPosition;
-layout(location = 8) in vec3 aVertexColor;
+layout(location = 8) in vec2 aVertexTexture;
 
-out vec3 vColor;
+uniform mat3 uModelMatrix;
 
-// Variable uniforme pour le temps écoulé depuis l'application du shader 
-uniform float uTime;
-
-
-// Fonction rotation
-mat3 rotate(float a)
-{
-	  mat3 M = mat3(vec3(cos(a), sin(a), 0), vec3(-sin(a), cos(a), 0), vec3(0, 0, 1));
-	  return M;
-}
-
+out vec2 vFragTexture;
 
 void main() {
-    vColor = aVertexColor;
-    mat3 MatriceRotateTime=rotate(uTime);
-    vec2 transformed=(MatriceRotateTime*vec3(aVertexPosition,1)).xy;
-    gl_Position = vec4(transformed, 0, 1);
-}
+  vFragTexture = aVertexTexture;
+  vec2 transformed = (uModelMatrix * vec3(aVertexPosition, 1)).xy;
+  gl_Position = vec4(transformed, 0, 1);
+};

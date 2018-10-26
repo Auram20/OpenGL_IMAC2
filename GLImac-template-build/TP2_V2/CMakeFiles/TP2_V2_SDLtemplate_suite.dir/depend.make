@@ -3,6 +3,7 @@
 
 TP2_V2/CMakeFiles/TP2_V2_SDLtemplate_suite.dir/SDLtemplate_suite.cpp.o: /home/6im2/manik/Bureau/OpenGL/GLImac-Template/TP2_V2/SDLtemplate_suite.cpp
 TP2_V2/CMakeFiles/TP2_V2_SDLtemplate_suite.dir/SDLtemplate_suite.cpp.o: /home/6im2/manik/Bureau/OpenGL/GLImac-Template/glimac/include/glimac/FilePath.hpp
+TP2_V2/CMakeFiles/TP2_V2_SDLtemplate_suite.dir/SDLtemplate_suite.cpp.o: /home/6im2/manik/Bureau/OpenGL/GLImac-Template/glimac/include/glimac/Image.hpp
 TP2_V2/CMakeFiles/TP2_V2_SDLtemplate_suite.dir/SDLtemplate_suite.cpp.o: /home/6im2/manik/Bureau/OpenGL/GLImac-Template/glimac/include/glimac/Program.hpp
 TP2_V2/CMakeFiles/TP2_V2_SDLtemplate_suite.dir/SDLtemplate_suite.cpp.o: /home/6im2/manik/Bureau/OpenGL/GLImac-Template/glimac/include/glimac/SDLWindowManager.hpp
 TP2_V2/CMakeFiles/TP2_V2_SDLtemplate_suite.dir/SDLtemplate_suite.cpp.o: /home/6im2/manik/Bureau/OpenGL/GLImac-Template/glimac/include/glimac/Shader.hpp

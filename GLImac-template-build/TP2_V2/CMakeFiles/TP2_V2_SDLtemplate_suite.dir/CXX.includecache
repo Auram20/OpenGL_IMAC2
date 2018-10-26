@@ -11,6 +11,8 @@ glimac/SDLWindowManager.hpp
 -
 glimac/glm.hpp
 -
+glimac/Image.hpp
+-
 GL/glew.h
 -
 iostream
@@ -23,6 +25,18 @@ glimac/FilePath.hpp
 /home/6im2/manik/Bureau/OpenGL/GLImac-Template/glimac/include/glimac/FilePath.hpp
 string
 -
+
+/home/6im2/manik/Bureau/OpenGL/GLImac-Template/glimac/include/glimac/Image.hpp
+vector
+-
+memory
+-
+unordered_map
+-
+glm.hpp
+/home/6im2/manik/Bureau/OpenGL/GLImac-Template/glimac/include/glimac/glm.hpp
+FilePath.hpp
+/home/6im2/manik/Bureau/OpenGL/GLImac-Template/glimac/include/glimac/FilePath.hpp
 
 /home/6im2/manik/Bureau/OpenGL/GLImac-Template/glimac/include/glimac/Program.hpp
 GL/glew.h

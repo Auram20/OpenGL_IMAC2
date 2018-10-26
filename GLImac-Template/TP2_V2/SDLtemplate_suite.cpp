@@ -1,6 +1,7 @@
 
 #include <glimac/SDLWindowManager.hpp>
 #include <glimac/glm.hpp>
+#include <glimac/Image.hpp>
 #include <GL/glew.h>
 #include <iostream>
 #include <glimac/Program.hpp>
@@ -22,6 +23,27 @@ struct Vertex2Duv{
 };
 
 
+glm::mat3 translate(float tx, float ty)
+{
+      glm::mat3 M = glm::mat3(glm::vec3(1, 0, 0), glm::vec3(0, 1, 0), glm::vec3(tx, ty, 1));
+      return M;
+}
+
+
+glm::mat3 scale(float sx, float sy)
+{
+      glm::mat3 M = glm::mat3(glm::vec3(sx, 0, 0), glm::vec3(0, sy, 0), glm::vec3(0, 0, 1));
+      return M;
+}
+
+glm::mat3 rotate(float a)
+{
+      glm::mat3 M = glm::mat3(glm::vec3(cos(a), sin(a), 0), glm::vec3(-sin(a), cos(a), 0), glm::vec3(0, 0, 1));
+      return M;
+}
+
+
+
 
 
 int main(int argc, char** argv) {
@@ -38,7 +60,10 @@ int main(int argc, char** argv) {
     FilePath applicationPath(argv[0]);
     Program program=loadProgram(applicationPath.dirPath()+"shaders/tex2D.vs.glsl",applicationPath.dirPath()+"shaders/tex2D.fs.glsl");
     program.use();
-    GLint indexuTime=glGetUniformLocation(program.getGLId(),"uTime");
+// On recupere le modele matrice
+    GLint uModelMatrix=glGetUniformLocation(program.getGLId(),"uModelMatrix");
+// On recupere la texture
+    GLint uTexture=glGetUniformLocation(program.getGLId(),"uTexture");
 
 
 
@@ -61,9 +86,9 @@ int main(int argc, char** argv) {
 
 
     Vertex2Duv vertices[] = { 
-          Vertex2Duv(glm::vec2(-1.0f, -1.0f), glm::vec2(0.f, 0.f)),
-          Vertex2Duv(glm::vec2(1.0f, -1.0f), glm::vec2(0.f, 0.f)),
-          Vertex2Duv(glm::vec2(0.f, 1.f), glm::vec2(0.f, 0.f)),
+          Vertex2Duv(glm::vec2(-1.0f, -1.0f), glm::vec2(0.f, 1.f)),
+          Vertex2Duv(glm::vec2(1.0f, -1.0f), glm::vec2(1.f, 1.f)),
+          Vertex2Duv(glm::vec2(0.f, 1.f), glm::vec2(0.5f, 0.f)),
         };
 
    
@@ -95,7 +120,26 @@ int main(int argc, char** argv) {
      // Débinding du VAO
      glBindVertexArray(0);
 
+    GLuint textures;
+    glGenTextures(1,&textures);
+    glUniform1i(uTexture,0);
+
+
     float timer= 0;
+    float i=0;
+
+    FilePath fp = applicationPath.dirPath() + "../../GLImac-Template/assets/textures/triforce.png";
+
+    std::unique_ptr<Image> triforce = loadImage(fp);
+    if (triforce != NULL) {
+        glBindTexture(GL_TEXTURE_2D, textures);
+        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, triforce->getWidth(), triforce->getHeight(), 0, GL_RGBA, GL_FLOAT, triforce->getPixels());
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+        glBindTexture(GL_TEXTURE_2D, 0);
+    }
+
+    // BOUCLE DE RENDU
     // Application loop:
     bool done = false;
     while(!done) {
@@ -114,8 +158,39 @@ int main(int argc, char** argv) {
          glClear(GL_COLOR_BUFFER_BIT);
          // On dessine
          glBindVertexArray(vao);
-         glUniform1f(indexuTime,timer+=0.01);
+
+         // REMPLISSAGE TEXTURE
+         // TRIANGLE 1 
+         glUniformMatrix3fv(uModelMatrix, 1, GL_FALSE, glm::value_ptr(scale(0.25,0.25)*translate(2,1.5)*rotate(-i)));
+         i+=0.01;
+         glBindTexture(GL_TEXTURE_2D, textures);
          glDrawArrays(GL_TRIANGLES,0,3);
+         glBindTexture(GL_TEXTURE_2D, 0);
+
+
+         // TRIANGLE 2 
+         glUniformMatrix3fv(uModelMatrix, 1, GL_FALSE, glm::value_ptr(scale(0.25,0.25)*translate(-2,1.5)*rotate(-i)));
+         i+=0.01;
+         glBindTexture(GL_TEXTURE_2D, textures);
+         glDrawArrays(GL_TRIANGLES,0,3);
+         glBindTexture(GL_TEXTURE_2D, 0);
+
+
+        // TRIANGLE 3 
+         glUniformMatrix3fv(uModelMatrix, 1, GL_FALSE, glm::value_ptr(scale(0.25,0.25)*translate(2,-1.5)*rotate(i)));
+         i+=0.01;
+         glBindTexture(GL_TEXTURE_2D, textures);
+         glDrawArrays(GL_TRIANGLES,0,3);
+         glBindTexture(GL_TEXTURE_2D, 0);
+
+
+        // TRIANGLE 4
+         glUniformMatrix3fv(uModelMatrix, 1, GL_FALSE, glm::value_ptr(scale(0.25,0.25)*translate(-2,-1.5)*rotate(i)));
+         i+=0.01;
+         glBindTexture(GL_TEXTURE_2D, textures);
+         glDrawArrays(GL_TRIANGLES,0,3);
+         glBindTexture(GL_TEXTURE_2D, 0);
+
          glBindVertexArray(0);
 
 
@@ -128,6 +203,7 @@ int main(int argc, char** argv) {
     // On libère les ressources 
     glDeleteBuffers(1,&vbo);
     glDeleteVertexArrays(1,&vao);
+    glDeleteTextures(1,&textures);
 
     return EXIT_SUCCESS;
 }
