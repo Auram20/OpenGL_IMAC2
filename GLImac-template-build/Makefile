@@ -241,6 +241,19 @@ TP2_V2_SDLtemplate/fast:
 .PHONY : TP2_V2_SDLtemplate/fast
 
 #=============================================================================
+# Target rules for targets named TP_Planetes_SDLPlanetes
+
+# Build rule for target.
+TP_Planetes_SDLPlanetes: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 TP_Planetes_SDLPlanetes
+.PHONY : TP_Planetes_SDLPlanetes
+
+# fast build rule for target.
+TP_Planetes_SDLPlanetes/fast:
+	$(MAKE) -f TP_Planetes/CMakeFiles/TP_Planetes_SDLPlanetes.dir/build.make TP_Planetes/CMakeFiles/TP_Planetes_SDLPlanetes.dir/build
+.PHONY : TP_Planetes_SDLPlanetes/fast
+
+#=============================================================================
 # Target rules for targets named TP_template_SDLtemplate
 
 # Build rule for target.
@@ -271,6 +284,7 @@ help:
 	@echo "... TP2_SDLtemplate"
 	@echo "... TP2_V2_SDLtemplate_suite"
 	@echo "... TP2_V2_SDLtemplate"
+	@echo "... TP_Planetes_SDLPlanetes"
 	@echo "... TP_template_SDLtemplate"
 .PHONY : help
 

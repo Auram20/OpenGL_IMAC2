@@ -12,6 +12,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/6im2/manik/Bureau/OpenGL/GLImac-Template/TP1/CMakeLists.txt"
   "/home/6im2/manik/Bureau/OpenGL/GLImac-Template/TP2/CMakeLists.txt"
   "/home/6im2/manik/Bureau/OpenGL/GLImac-Template/TP2_V2/CMakeLists.txt"
+  "/home/6im2/manik/Bureau/OpenGL/GLImac-Template/TP_Planetes/CMakeLists.txt"
   "/home/6im2/manik/Bureau/OpenGL/GLImac-Template/TP_template/CMakeLists.txt"
   "/home/6im2/manik/Bureau/OpenGL/GLImac-Template/glimac/CMakeLists.txt"
   "CMakeFiles/3.7.2/CMakeCCompiler.cmake"
@@ -56,6 +57,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "TP1/CMakeFiles/CMakeDirectoryInformation.cmake"
   "TP2/CMakeFiles/CMakeDirectoryInformation.cmake"
   "TP2_V2/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "TP_Planetes/CMakeFiles/CMakeDirectoryInformation.cmake"
   "TP_template/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
@@ -71,5 +73,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "TP2/CMakeFiles/TP2_SDLtemplate.dir/DependInfo.cmake"
   "TP2_V2/CMakeFiles/TP2_V2_SDLtemplate_suite.dir/DependInfo.cmake"
   "TP2_V2/CMakeFiles/TP2_V2_SDLtemplate.dir/DependInfo.cmake"
+  "TP_Planetes/CMakeFiles/TP_Planetes_SDLPlanetes.dir/DependInfo.cmake"
   "TP_template/CMakeFiles/TP_template_SDLtemplate.dir/DependInfo.cmake"
   )

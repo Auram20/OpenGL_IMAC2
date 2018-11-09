@@ -84,7 +84,7 @@ glimac/preinstall:
 glimac/CMakeFiles/glimac.dir/all:
 	$(MAKE) -f glimac/CMakeFiles/glimac.dir/build.make glimac/CMakeFiles/glimac.dir/depend
 	$(MAKE) -f glimac/CMakeFiles/glimac.dir/build.make glimac/CMakeFiles/glimac.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/6im2/manik/Bureau/OpenGL/GLImac-template-build/CMakeFiles --progress-num=21,22,23,24,25,26,27,28,29 "Built target glimac"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/6im2/manik/Bureau/OpenGL/GLImac-template-build/CMakeFiles --progress-num=23,24,25,26,27,28,29,30,31 "Built target glimac"
 .PHONY : glimac/CMakeFiles/glimac.dir/all
 
 # Include target in all.
@@ -514,6 +514,61 @@ clean: TP2_V2/CMakeFiles/TP2_V2_SDLtemplate.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Directory level rules for directory TP_Planetes
+
+# Convenience name for "all" pass in the directory.
+TP_Planetes/all: TP_Planetes/CMakeFiles/TP_Planetes_SDLPlanetes.dir/all
+
+.PHONY : TP_Planetes/all
+
+# Convenience name for "clean" pass in the directory.
+TP_Planetes/clean: TP_Planetes/CMakeFiles/TP_Planetes_SDLPlanetes.dir/clean
+
+.PHONY : TP_Planetes/clean
+
+# Convenience name for "preinstall" pass in the directory.
+TP_Planetes/preinstall:
+
+.PHONY : TP_Planetes/preinstall
+
+#=============================================================================
+# Target rules for target TP_Planetes/CMakeFiles/TP_Planetes_SDLPlanetes.dir
+
+# All Build rule for target.
+TP_Planetes/CMakeFiles/TP_Planetes_SDLPlanetes.dir/all: glimac/CMakeFiles/glimac.dir/all
+	$(MAKE) -f TP_Planetes/CMakeFiles/TP_Planetes_SDLPlanetes.dir/build.make TP_Planetes/CMakeFiles/TP_Planetes_SDLPlanetes.dir/depend
+	$(MAKE) -f TP_Planetes/CMakeFiles/TP_Planetes_SDLPlanetes.dir/build.make TP_Planetes/CMakeFiles/TP_Planetes_SDLPlanetes.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/6im2/manik/Bureau/OpenGL/GLImac-template-build/CMakeFiles --progress-num=19,20 "Built target TP_Planetes_SDLPlanetes"
+.PHONY : TP_Planetes/CMakeFiles/TP_Planetes_SDLPlanetes.dir/all
+
+# Include target in all.
+all: TP_Planetes/CMakeFiles/TP_Planetes_SDLPlanetes.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+TP_Planetes/CMakeFiles/TP_Planetes_SDLPlanetes.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/6im2/manik/Bureau/OpenGL/GLImac-template-build/CMakeFiles 11
+	$(MAKE) -f CMakeFiles/Makefile2 TP_Planetes/CMakeFiles/TP_Planetes_SDLPlanetes.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/6im2/manik/Bureau/OpenGL/GLImac-template-build/CMakeFiles 0
+.PHONY : TP_Planetes/CMakeFiles/TP_Planetes_SDLPlanetes.dir/rule
+
+# Convenience name for target.
+TP_Planetes_SDLPlanetes: TP_Planetes/CMakeFiles/TP_Planetes_SDLPlanetes.dir/rule
+
+.PHONY : TP_Planetes_SDLPlanetes
+
+# clean rule for target.
+TP_Planetes/CMakeFiles/TP_Planetes_SDLPlanetes.dir/clean:
+	$(MAKE) -f TP_Planetes/CMakeFiles/TP_Planetes_SDLPlanetes.dir/build.make TP_Planetes/CMakeFiles/TP_Planetes_SDLPlanetes.dir/clean
+.PHONY : TP_Planetes/CMakeFiles/TP_Planetes_SDLPlanetes.dir/clean
+
+# clean rule for target.
+clean: TP_Planetes/CMakeFiles/TP_Planetes_SDLPlanetes.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Directory level rules for directory TP_template
 
 # Convenience name for "all" pass in the directory.
@@ -538,7 +593,7 @@ TP_template/preinstall:
 TP_template/CMakeFiles/TP_template_SDLtemplate.dir/all: glimac/CMakeFiles/glimac.dir/all
 	$(MAKE) -f TP_template/CMakeFiles/TP_template_SDLtemplate.dir/build.make TP_template/CMakeFiles/TP_template_SDLtemplate.dir/depend
 	$(MAKE) -f TP_template/CMakeFiles/TP_template_SDLtemplate.dir/build.make TP_template/CMakeFiles/TP_template_SDLtemplate.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/6im2/manik/Bureau/OpenGL/GLImac-template-build/CMakeFiles --progress-num=19,20 "Built target TP_template_SDLtemplate"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/6im2/manik/Bureau/OpenGL/GLImac-template-build/CMakeFiles --progress-num=21,22 "Built target TP_template_SDLtemplate"
 .PHONY : TP_template/CMakeFiles/TP_template_SDLtemplate.dir/all
 
 # Include target in all.

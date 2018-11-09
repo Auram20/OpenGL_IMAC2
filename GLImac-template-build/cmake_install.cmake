@@ -38,6 +38,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/6im2/manik/Bureau/OpenGL/GLImac-template-build/TP1/cmake_install.cmake")
   include("/home/6im2/manik/Bureau/OpenGL/GLImac-template-build/TP2/cmake_install.cmake")
   include("/home/6im2/manik/Bureau/OpenGL/GLImac-template-build/TP2_V2/cmake_install.cmake")
+  include("/home/6im2/manik/Bureau/OpenGL/GLImac-template-build/TP_Planetes/cmake_install.cmake")
   include("/home/6im2/manik/Bureau/OpenGL/GLImac-template-build/TP_template/cmake_install.cmake")
 
 endif()
