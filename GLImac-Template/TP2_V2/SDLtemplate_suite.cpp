@@ -9,6 +9,7 @@
 
 using namespace glimac;
 
+// Se placer dans le dossier GLImac-template-build/TP2_V2 et lancer : cmake ../../GLImac-Template-build && make && ./TP2_V2_SDLtemplate
 
 
 
