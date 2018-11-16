@@ -3,14 +3,12 @@
 #include <glimac/common.hpp>
 #include <iostream>
 #include <glimac/glm.hpp>
-#include <glm/gtc/random.hpp>
 #include <glimac/Sphere.hpp>
 #include <glimac/SDLWindowManager.hpp>
 #include <glimac/Shader.hpp>
 #include <glimac/Image.hpp>
 #include <glimac/Program.hpp>
 #include <glimac/FilePath.hpp>
-#include <vector>
 
 using namespace glimac;
 
@@ -20,6 +18,7 @@ int main(int argc, char** argv) {
 
     // Création d'une sphère 
     Sphere sphere(1, 32, 16);
+    Sphere lune(1,15,8);
 
 
 
@@ -79,7 +78,7 @@ int main(int argc, char** argv) {
 
     //********************************* VAO 
 
-     // Création du VAO
+          // Création du VAO
      GLuint vao; 
      glGenVertexArrays(1,&vao);
      // Binding du VAO
@@ -124,15 +123,8 @@ int main(int argc, char** argv) {
     MVMatrix= glm::translate(MVMatrix,glm::vec3(0.f, 0.f, -5.f));
     NormalMatrix = glm::transpose(glm::inverse(MVMatrix));
 
-    std::vector<glm::vec3> Rotations;
-    std::vector<glm::vec3> Positions;
 
-    for (int i=0; i<32 ; i++)
-    { 
-        Rotations.push_back(glm::sphericalRand(3.f));
-        Positions.push_back(glm::vec3(glm::linearRand(0.f,3.f),glm::linearRand(0.f,3.f),0));
-    }
-   
+
     /*********************************
      * HERE COMES THE LOOP
      *********************************/
@@ -154,46 +146,17 @@ int main(int argc, char** argv) {
          // On Bind le vao pour cibler
          glBindVertexArray(vao);
 
-         
-         // TRANSFORMATIONS PLANETES
-         MVMatrix=glm::mat4(1.f);
-         MVMatrix= glm::translate(MVMatrix,glm::vec3(0.f, 0.f, -5.f));
-
-         // ENVOI DE MATRICES PLANETES
-         glUniformMatrix4fv(uMVPMatrix, 1, GL_FALSE, glm::value_ptr(ProjMatrix * MVMatrix)); 
-         glUniformMatrix4fv(uMVMatrix, 1, GL_FALSE, glm::value_ptr(MVMatrix)); 
-         glUniformMatrix4fv(uNormalMatrix, 1, GL_FALSE, glm::value_ptr(NormalMatrix)); 
-      
-
          // LA PLANETE
-         glDrawArrays(GL_TRIANGLES,0,sphere.getVertexCount());
-
-
-
-
-// BOUCLE 32 LUNES MDR 
-
-// On randomise un axe de rotation à chaque boucle 
-
-
-    for (int i=0; i<32 ; i++)
-    {    // TRANSFORMATION LUNE   
-
-         MVMatrix=glm::mat4(1.f);
-         MVMatrix = glm::translate(MVMatrix, glm::vec3(0.f ,0.f, -5.f)); // Translation, on se met sur le repère de la Terre pour faire la Rotation
-         MVMatrix = glm::rotate(MVMatrix, windowManager.getTime(), Rotations[i]); // Rotation
-         MVMatrix = glm::translate(MVMatrix, Positions[i]); // Translation
-         MVMatrix = glm::scale(MVMatrix, glm::vec3(0.2f, 0.2f, 0.2f));      
-         
-         // ENVOI DE MATRICES LUNE
          glUniformMatrix4fv(uMVPMatrix, 1, GL_FALSE, glm::value_ptr(ProjMatrix * MVMatrix)); 
          glUniformMatrix4fv(uMVMatrix, 1, GL_FALSE, glm::value_ptr(MVMatrix)); 
          glUniformMatrix4fv(uNormalMatrix, 1, GL_FALSE, glm::value_ptr(NormalMatrix)); 
-      
-         // LA LUNE 
          glDrawArrays(GL_TRIANGLES,0,sphere.getVertexCount());
-    }
-      
+
+         // LA LUNE 
+         MVMatrix = glm::rotate(MVMatrix, windowManager.getTime(), glm::vec3(0, 1, 0)); // Translation * Rotation
+         glDrawArrays(GL_TRIANGLES,0,lune.getVertexCount());
+        
+
 
          glBindVertexArray(0);   
          // On débind le vao afin de ne pas le modifier par erreur

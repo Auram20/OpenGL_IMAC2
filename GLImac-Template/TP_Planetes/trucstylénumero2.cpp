@@ -10,7 +10,6 @@
 #include <glimac/Image.hpp>
 #include <glimac/Program.hpp>
 #include <glimac/FilePath.hpp>
-#include <vector>
 
 using namespace glimac;
 
@@ -79,7 +78,7 @@ int main(int argc, char** argv) {
 
     //********************************* VAO 
 
-     // Création du VAO
+          // Création du VAO
      GLuint vao; 
      glGenVertexArrays(1,&vao);
      // Binding du VAO
@@ -124,15 +123,8 @@ int main(int argc, char** argv) {
     MVMatrix= glm::translate(MVMatrix,glm::vec3(0.f, 0.f, -5.f));
     NormalMatrix = glm::transpose(glm::inverse(MVMatrix));
 
-    std::vector<glm::vec3> Rotations;
-    std::vector<glm::vec3> Positions;
 
-    for (int i=0; i<32 ; i++)
-    { 
-        Rotations.push_back(glm::sphericalRand(3.f));
-        Positions.push_back(glm::vec3(glm::linearRand(0.f,3.f),glm::linearRand(0.f,3.f),0));
-    }
-   
+
     /*********************************
      * HERE COMES THE LOOP
      *********************************/
@@ -178,11 +170,13 @@ int main(int argc, char** argv) {
 
     for (int i=0; i<32 ; i++)
     {    // TRANSFORMATION LUNE   
+        
+    glm::vec3 axeRotation=glm::sphericalRand(1.0f);
 
          MVMatrix=glm::mat4(1.f);
          MVMatrix = glm::translate(MVMatrix, glm::vec3(0.f ,0.f, -5.f)); // Translation, on se met sur le repère de la Terre pour faire la Rotation
-         MVMatrix = glm::rotate(MVMatrix, windowManager.getTime(), Rotations[i]); // Rotation
-         MVMatrix = glm::translate(MVMatrix, Positions[i]); // Translation
+         MVMatrix = glm::rotate(MVMatrix, windowManager.getTime(), axeRotation); // Rotation
+         MVMatrix = glm::translate(MVMatrix, glm::vec3(-3.f ,0.f, 0.f)); // Translation
          MVMatrix = glm::scale(MVMatrix, glm::vec3(0.2f, 0.2f, 0.2f));      
          
          // ENVOI DE MATRICES LUNE

@@ -17,7 +17,11 @@ iostream
 -
 glimac/glm.hpp
 -
+glm/gtc/random.hpp
+-
 glimac/Sphere.hpp
+-
+glimac/SDLWindowManager.hpp
 -
 glimac/Shader.hpp
 -
@@ -26,6 +30,8 @@ glimac/Image.hpp
 glimac/Program.hpp
 -
 glimac/FilePath.hpp
+-
+vector
 -
 
 /home/6im2/manik/Bureau/OpenGL/GLImac-Template/glimac/include/glimac/FilePath.hpp
