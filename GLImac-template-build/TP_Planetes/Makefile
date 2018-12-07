@@ -111,6 +111,36 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+TP_Planetes/CMakeFiles/TP_Planetes_trucstyléquitourne.dir/rule:
+	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f CMakeFiles/Makefile2 TP_Planetes/CMakeFiles/TP_Planetes_trucstyléquitourne.dir/rule
+.PHONY : TP_Planetes/CMakeFiles/TP_Planetes_trucstyléquitourne.dir/rule
+
+# Convenience name for target.
+TP_Planetes_trucstyléquitourne: TP_Planetes/CMakeFiles/TP_Planetes_trucstyléquitourne.dir/rule
+
+.PHONY : TP_Planetes_trucstyléquitourne
+
+# fast build rule for target.
+TP_Planetes_trucstyléquitourne/fast:
+	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f TP_Planetes/CMakeFiles/TP_Planetes_trucstyléquitourne.dir/build.make TP_Planetes/CMakeFiles/TP_Planetes_trucstyléquitourne.dir/build
+.PHONY : TP_Planetes_trucstyléquitourne/fast
+
+# Convenience name for target.
+TP_Planetes/CMakeFiles/TP_Planetes_trucstylénumero2.dir/rule:
+	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f CMakeFiles/Makefile2 TP_Planetes/CMakeFiles/TP_Planetes_trucstylénumero2.dir/rule
+.PHONY : TP_Planetes/CMakeFiles/TP_Planetes_trucstylénumero2.dir/rule
+
+# Convenience name for target.
+TP_Planetes_trucstylénumero2: TP_Planetes/CMakeFiles/TP_Planetes_trucstylénumero2.dir/rule
+
+.PHONY : TP_Planetes_trucstylénumero2
+
+# fast build rule for target.
+TP_Planetes_trucstylénumero2/fast:
+	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f TP_Planetes/CMakeFiles/TP_Planetes_trucstylénumero2.dir/build.make TP_Planetes/CMakeFiles/TP_Planetes_trucstylénumero2.dir/build
+.PHONY : TP_Planetes_trucstylénumero2/fast
+
+# Convenience name for target.
 TP_Planetes/CMakeFiles/TP_Planetes_SDLPlanetes.dir/rule:
 	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f CMakeFiles/Makefile2 TP_Planetes/CMakeFiles/TP_Planetes_SDLPlanetes.dir/rule
 .PHONY : TP_Planetes/CMakeFiles/TP_Planetes_SDLPlanetes.dir/rule
@@ -124,6 +154,36 @@ TP_Planetes_SDLPlanetes: TP_Planetes/CMakeFiles/TP_Planetes_SDLPlanetes.dir/rule
 TP_Planetes_SDLPlanetes/fast:
 	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f TP_Planetes/CMakeFiles/TP_Planetes_SDLPlanetes.dir/build.make TP_Planetes/CMakeFiles/TP_Planetes_SDLPlanetes.dir/build
 .PHONY : TP_Planetes_SDLPlanetes/fast
+
+# Convenience name for target.
+TP_Planetes/CMakeFiles/TP_Planetes_Sphere.dir/rule:
+	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f CMakeFiles/Makefile2 TP_Planetes/CMakeFiles/TP_Planetes_Sphere.dir/rule
+.PHONY : TP_Planetes/CMakeFiles/TP_Planetes_Sphere.dir/rule
+
+# Convenience name for target.
+TP_Planetes_Sphere: TP_Planetes/CMakeFiles/TP_Planetes_Sphere.dir/rule
+
+.PHONY : TP_Planetes_Sphere
+
+# fast build rule for target.
+TP_Planetes_Sphere/fast:
+	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f TP_Planetes/CMakeFiles/TP_Planetes_Sphere.dir/build.make TP_Planetes/CMakeFiles/TP_Planetes_Sphere.dir/build
+.PHONY : TP_Planetes_Sphere/fast
+
+# Convenience name for target.
+TP_Planetes/CMakeFiles/TP_Planetes_trucstylénumero3.dir/rule:
+	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f CMakeFiles/Makefile2 TP_Planetes/CMakeFiles/TP_Planetes_trucstylénumero3.dir/rule
+.PHONY : TP_Planetes/CMakeFiles/TP_Planetes_trucstylénumero3.dir/rule
+
+# Convenience name for target.
+TP_Planetes_trucstylénumero3: TP_Planetes/CMakeFiles/TP_Planetes_trucstylénumero3.dir/rule
+
+.PHONY : TP_Planetes_trucstylénumero3
+
+# fast build rule for target.
+TP_Planetes_trucstylénumero3/fast:
+	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f TP_Planetes/CMakeFiles/TP_Planetes_trucstylénumero3.dir/build.make TP_Planetes/CMakeFiles/TP_Planetes_trucstylénumero3.dir/build
+.PHONY : TP_Planetes_trucstylénumero3/fast
 
 SDLPlanetes.o: SDLPlanetes.cpp.o
 
@@ -152,6 +212,114 @@ SDLPlanetes.cpp.s:
 	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f TP_Planetes/CMakeFiles/TP_Planetes_SDLPlanetes.dir/build.make TP_Planetes/CMakeFiles/TP_Planetes_SDLPlanetes.dir/SDLPlanetes.cpp.s
 .PHONY : SDLPlanetes.cpp.s
 
+Sphere.o: Sphere.cpp.o
+
+.PHONY : Sphere.o
+
+# target to build an object file
+Sphere.cpp.o:
+	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f TP_Planetes/CMakeFiles/TP_Planetes_Sphere.dir/build.make TP_Planetes/CMakeFiles/TP_Planetes_Sphere.dir/Sphere.cpp.o
+.PHONY : Sphere.cpp.o
+
+Sphere.i: Sphere.cpp.i
+
+.PHONY : Sphere.i
+
+# target to preprocess a source file
+Sphere.cpp.i:
+	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f TP_Planetes/CMakeFiles/TP_Planetes_Sphere.dir/build.make TP_Planetes/CMakeFiles/TP_Planetes_Sphere.dir/Sphere.cpp.i
+.PHONY : Sphere.cpp.i
+
+Sphere.s: Sphere.cpp.s
+
+.PHONY : Sphere.s
+
+# target to generate assembly for a file
+Sphere.cpp.s:
+	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f TP_Planetes/CMakeFiles/TP_Planetes_Sphere.dir/build.make TP_Planetes/CMakeFiles/TP_Planetes_Sphere.dir/Sphere.cpp.s
+.PHONY : Sphere.cpp.s
+
+trucstylénumero2.o: trucstylénumero2.cpp.o
+
+.PHONY : trucstylénumero2.o
+
+# target to build an object file
+trucstylénumero2.cpp.o:
+	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f TP_Planetes/CMakeFiles/TP_Planetes_trucstylénumero2.dir/build.make TP_Planetes/CMakeFiles/TP_Planetes_trucstylénumero2.dir/trucstylénumero2.cpp.o
+.PHONY : trucstylénumero2.cpp.o
+
+trucstylénumero2.i: trucstylénumero2.cpp.i
+
+.PHONY : trucstylénumero2.i
+
+# target to preprocess a source file
+trucstylénumero2.cpp.i:
+	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f TP_Planetes/CMakeFiles/TP_Planetes_trucstylénumero2.dir/build.make TP_Planetes/CMakeFiles/TP_Planetes_trucstylénumero2.dir/trucstylénumero2.cpp.i
+.PHONY : trucstylénumero2.cpp.i
+
+trucstylénumero2.s: trucstylénumero2.cpp.s
+
+.PHONY : trucstylénumero2.s
+
+# target to generate assembly for a file
+trucstylénumero2.cpp.s:
+	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f TP_Planetes/CMakeFiles/TP_Planetes_trucstylénumero2.dir/build.make TP_Planetes/CMakeFiles/TP_Planetes_trucstylénumero2.dir/trucstylénumero2.cpp.s
+.PHONY : trucstylénumero2.cpp.s
+
+trucstylénumero3.o: trucstylénumero3.cpp.o
+
+.PHONY : trucstylénumero3.o
+
+# target to build an object file
+trucstylénumero3.cpp.o:
+	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f TP_Planetes/CMakeFiles/TP_Planetes_trucstylénumero3.dir/build.make TP_Planetes/CMakeFiles/TP_Planetes_trucstylénumero3.dir/trucstylénumero3.cpp.o
+.PHONY : trucstylénumero3.cpp.o
+
+trucstylénumero3.i: trucstylénumero3.cpp.i
+
+.PHONY : trucstylénumero3.i
+
+# target to preprocess a source file
+trucstylénumero3.cpp.i:
+	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f TP_Planetes/CMakeFiles/TP_Planetes_trucstylénumero3.dir/build.make TP_Planetes/CMakeFiles/TP_Planetes_trucstylénumero3.dir/trucstylénumero3.cpp.i
+.PHONY : trucstylénumero3.cpp.i
+
+trucstylénumero3.s: trucstylénumero3.cpp.s
+
+.PHONY : trucstylénumero3.s
+
+# target to generate assembly for a file
+trucstylénumero3.cpp.s:
+	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f TP_Planetes/CMakeFiles/TP_Planetes_trucstylénumero3.dir/build.make TP_Planetes/CMakeFiles/TP_Planetes_trucstylénumero3.dir/trucstylénumero3.cpp.s
+.PHONY : trucstylénumero3.cpp.s
+
+trucstyléquitourne.o: trucstyléquitourne.cpp.o
+
+.PHONY : trucstyléquitourne.o
+
+# target to build an object file
+trucstyléquitourne.cpp.o:
+	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f TP_Planetes/CMakeFiles/TP_Planetes_trucstyléquitourne.dir/build.make TP_Planetes/CMakeFiles/TP_Planetes_trucstyléquitourne.dir/trucstyléquitourne.cpp.o
+.PHONY : trucstyléquitourne.cpp.o
+
+trucstyléquitourne.i: trucstyléquitourne.cpp.i
+
+.PHONY : trucstyléquitourne.i
+
+# target to preprocess a source file
+trucstyléquitourne.cpp.i:
+	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f TP_Planetes/CMakeFiles/TP_Planetes_trucstyléquitourne.dir/build.make TP_Planetes/CMakeFiles/TP_Planetes_trucstyléquitourne.dir/trucstyléquitourne.cpp.i
+.PHONY : trucstyléquitourne.cpp.i
+
+trucstyléquitourne.s: trucstyléquitourne.cpp.s
+
+.PHONY : trucstyléquitourne.s
+
+# target to generate assembly for a file
+trucstyléquitourne.cpp.s:
+	cd /home/6im2/manik/Bureau/OpenGL/GLImac-template-build && $(MAKE) -f TP_Planetes/CMakeFiles/TP_Planetes_trucstyléquitourne.dir/build.make TP_Planetes/CMakeFiles/TP_Planetes_trucstyléquitourne.dir/trucstyléquitourne.cpp.s
+.PHONY : trucstyléquitourne.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -160,10 +328,26 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... TP_Planetes_trucstyléquitourne"
+	@echo "... TP_Planetes_trucstylénumero2"
 	@echo "... TP_Planetes_SDLPlanetes"
+	@echo "... TP_Planetes_Sphere"
+	@echo "... TP_Planetes_trucstylénumero3"
 	@echo "... SDLPlanetes.o"
 	@echo "... SDLPlanetes.i"
 	@echo "... SDLPlanetes.s"
+	@echo "... Sphere.o"
+	@echo "... Sphere.i"
+	@echo "... Sphere.s"
+	@echo "... trucstylénumero2.o"
+	@echo "... trucstylénumero2.i"
+	@echo "... trucstylénumero2.s"
+	@echo "... trucstylénumero3.o"
+	@echo "... trucstylénumero3.i"
+	@echo "... trucstylénumero3.s"
+	@echo "... trucstyléquitourne.o"
+	@echo "... trucstyléquitourne.i"
+	@echo "... trucstyléquitourne.s"
 .PHONY : help
 
 

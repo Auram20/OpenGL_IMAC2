@@ -20,7 +20,11 @@
 /home/6im2/manik/Bureau/OpenGL/GLImac-template-build/TP2_V2/CMakeFiles/TP2_V2_SDLtemplate.dir
 /home/6im2/manik/Bureau/OpenGL/GLImac-template-build/TP_Planetes/CMakeFiles/rebuild_cache.dir
 /home/6im2/manik/Bureau/OpenGL/GLImac-template-build/TP_Planetes/CMakeFiles/edit_cache.dir
+/home/6im2/manik/Bureau/OpenGL/GLImac-template-build/TP_Planetes/CMakeFiles/TP_Planetes_trucstyléquitourne.dir
+/home/6im2/manik/Bureau/OpenGL/GLImac-template-build/TP_Planetes/CMakeFiles/TP_Planetes_trucstylénumero2.dir
 /home/6im2/manik/Bureau/OpenGL/GLImac-template-build/TP_Planetes/CMakeFiles/TP_Planetes_SDLPlanetes.dir
+/home/6im2/manik/Bureau/OpenGL/GLImac-template-build/TP_Planetes/CMakeFiles/TP_Planetes_Sphere.dir
+/home/6im2/manik/Bureau/OpenGL/GLImac-template-build/TP_Planetes/CMakeFiles/TP_Planetes_trucstylénumero3.dir
 /home/6im2/manik/Bureau/OpenGL/GLImac-template-build/TP_template/CMakeFiles/rebuild_cache.dir
 /home/6im2/manik/Bureau/OpenGL/GLImac-template-build/TP_template/CMakeFiles/edit_cache.dir
 /home/6im2/manik/Bureau/OpenGL/GLImac-template-build/TP_template/CMakeFiles/TP_template_SDLtemplate.dir

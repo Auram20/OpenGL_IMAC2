@@ -241,6 +241,32 @@ TP2_V2_SDLtemplate/fast:
 .PHONY : TP2_V2_SDLtemplate/fast
 
 #=============================================================================
+# Target rules for targets named TP_Planetes_trucstyléquitourne
+
+# Build rule for target.
+TP_Planetes_trucstyléquitourne: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 TP_Planetes_trucstyléquitourne
+.PHONY : TP_Planetes_trucstyléquitourne
+
+# fast build rule for target.
+TP_Planetes_trucstyléquitourne/fast:
+	$(MAKE) -f TP_Planetes/CMakeFiles/TP_Planetes_trucstyléquitourne.dir/build.make TP_Planetes/CMakeFiles/TP_Planetes_trucstyléquitourne.dir/build
+.PHONY : TP_Planetes_trucstyléquitourne/fast
+
+#=============================================================================
+# Target rules for targets named TP_Planetes_trucstylénumero2
+
+# Build rule for target.
+TP_Planetes_trucstylénumero2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 TP_Planetes_trucstylénumero2
+.PHONY : TP_Planetes_trucstylénumero2
+
+# fast build rule for target.
+TP_Planetes_trucstylénumero2/fast:
+	$(MAKE) -f TP_Planetes/CMakeFiles/TP_Planetes_trucstylénumero2.dir/build.make TP_Planetes/CMakeFiles/TP_Planetes_trucstylénumero2.dir/build
+.PHONY : TP_Planetes_trucstylénumero2/fast
+
+#=============================================================================
 # Target rules for targets named TP_Planetes_SDLPlanetes
 
 # Build rule for target.
@@ -252,6 +278,32 @@ TP_Planetes_SDLPlanetes: cmake_check_build_system
 TP_Planetes_SDLPlanetes/fast:
 	$(MAKE) -f TP_Planetes/CMakeFiles/TP_Planetes_SDLPlanetes.dir/build.make TP_Planetes/CMakeFiles/TP_Planetes_SDLPlanetes.dir/build
 .PHONY : TP_Planetes_SDLPlanetes/fast
+
+#=============================================================================
+# Target rules for targets named TP_Planetes_Sphere
+
+# Build rule for target.
+TP_Planetes_Sphere: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 TP_Planetes_Sphere
+.PHONY : TP_Planetes_Sphere
+
+# fast build rule for target.
+TP_Planetes_Sphere/fast:
+	$(MAKE) -f TP_Planetes/CMakeFiles/TP_Planetes_Sphere.dir/build.make TP_Planetes/CMakeFiles/TP_Planetes_Sphere.dir/build
+.PHONY : TP_Planetes_Sphere/fast
+
+#=============================================================================
+# Target rules for targets named TP_Planetes_trucstylénumero3
+
+# Build rule for target.
+TP_Planetes_trucstylénumero3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 TP_Planetes_trucstylénumero3
+.PHONY : TP_Planetes_trucstylénumero3
+
+# fast build rule for target.
+TP_Planetes_trucstylénumero3/fast:
+	$(MAKE) -f TP_Planetes/CMakeFiles/TP_Planetes_trucstylénumero3.dir/build.make TP_Planetes/CMakeFiles/TP_Planetes_trucstylénumero3.dir/build
+.PHONY : TP_Planetes_trucstylénumero3/fast
 
 #=============================================================================
 # Target rules for targets named TP_template_SDLtemplate
@@ -284,7 +336,11 @@ help:
 	@echo "... TP2_SDLtemplate"
 	@echo "... TP2_V2_SDLtemplate_suite"
 	@echo "... TP2_V2_SDLtemplate"
+	@echo "... TP_Planetes_trucstyléquitourne"
+	@echo "... TP_Planetes_trucstylénumero2"
 	@echo "... TP_Planetes_SDLPlanetes"
+	@echo "... TP_Planetes_Sphere"
+	@echo "... TP_Planetes_trucstylénumero3"
 	@echo "... TP_template_SDLtemplate"
 .PHONY : help
 

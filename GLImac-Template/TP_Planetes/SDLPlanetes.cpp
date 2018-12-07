@@ -36,7 +36,7 @@ int main(int argc, char** argv) {
 
     //********************************* IMPORTATION DES SHADERS 
     FilePath applicationPath(argv[0]);
-    Program program=loadProgram(applicationPath.dirPath()+"shaders/3D.vs.glsl",applicationPath.dirPath()+"shaders/normale.fs.glsl");
+    Program program=loadProgram(applicationPath.dirPath()+"shaders/3D.vs.glsl",applicationPath.dirPath()+"shaders/tex3D.fs.glsl");
     program.use();
 
     // Juste des indications sur le terminal
@@ -53,7 +53,8 @@ int main(int argc, char** argv) {
     GLint uMVMatrix=glGetUniformLocation(program.getGLId(),"uMVMatrix");
 // On recupere uNormalMatrix
     GLint uNormalMatrix=glGetUniformLocation(program.getGLId(),"uNormalMatrix");
-
+// On recupere la texture
+    GLint uTexture=glGetUniformLocation(program.getGLId(),"uTexture");
 
 
 
@@ -133,6 +134,32 @@ int main(int argc, char** argv) {
         Positions.push_back(glm::vec3(glm::linearRand(0.f,3.f),glm::linearRand(0.f,3.f),0));
     }
    
+    
+   
+    /*********************************
+     * TEXTURE
+     *********************************/
+
+
+    GLuint textures;
+    glGenTextures(1,&textures);
+    glUniform1i(uTexture,0);
+
+    FilePath fp = applicationPath.dirPath() + "../../GLImac-Template/assets/textures/EarthMap.jpg";
+
+    std::unique_ptr<Image> earthImage = loadImage(fp);
+    if (earthImage != NULL) {
+        glBindTexture(GL_TEXTURE_2D, textures);
+        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, earthImage->getWidth(), earthImage->getHeight(), 0, GL_RGBA, GL_FLOAT, earthImage->getPixels());
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+        glBindTexture(GL_TEXTURE_2D, 0);
+    }
+
+
+
+
+
     /*********************************
      * HERE COMES THE LOOP
      *********************************/
@@ -152,12 +179,13 @@ int main(int argc, char** argv) {
         // On dessine
 
          // On Bind le vao pour cibler
-         glBindVertexArray(vao);
+         glBindVertexArray(vao);    
 
          
          // TRANSFORMATIONS PLANETES
          MVMatrix=glm::mat4(1.f);
          MVMatrix= glm::translate(MVMatrix,glm::vec3(0.f, 0.f, -5.f));
+         MVMatrix = glm::rotate(MVMatrix, windowManager.getTime(),glm::vec3(0.f,1.f,0.f)); // Rotation
 
          // ENVOI DE MATRICES PLANETES
          glUniformMatrix4fv(uMVPMatrix, 1, GL_FALSE, glm::value_ptr(ProjMatrix * MVMatrix)); 
@@ -166,7 +194,10 @@ int main(int argc, char** argv) {
       
 
          // LA PLANETE
+
+         glBindTexture(GL_TEXTURE_2D, textures);    
          glDrawArrays(GL_TRIANGLES,0,sphere.getVertexCount());
+         glBindTexture(GL_TEXTURE_2D, 0);
 
 
 
@@ -214,6 +245,7 @@ int main(int argc, char** argv) {
 
     glDeleteBuffers(1,&vbo);
     glDeleteVertexArrays(1,&vao);
+    glDeleteTextures(1,&textures);
 
     return EXIT_SUCCESS;
 }
