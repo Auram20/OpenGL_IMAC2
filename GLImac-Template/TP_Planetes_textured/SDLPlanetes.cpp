@@ -155,7 +155,7 @@ int main(int argc, char** argv) {
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
         glBindTexture(GL_TEXTURE_2D, 0);
     }
-
+    
 
     FilePath fp2 = applicationPath.dirPath() + "../../GLImac-Template/assets/textures/CloudMap.jpg";
     std::unique_ptr<Image> cloudImage = loadImage(fp2);
